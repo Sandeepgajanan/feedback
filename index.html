@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section>
+    <h1>We're happy to hear from You</h1>
+    <div class="underline"></div>
+
+    <form id="feedbackForm" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Full Name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <div class="star-rating">
+          <input type="checkbox" id="star5" name="rating" value="5">
+          <input type="checkbox" id="star4" name="rating" value="4">
+          <input type="checkbox" id="star3" name="rating" value="3">
+          <input type="checkbox" id="star2" name="rating" value="2">
+          <input type="checkbox" id="star1" name="rating" value="1">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required
+          placeholder="Please describe your dining experience..."></textarea>
+      </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+     
+    </form>
+
+  </section>
+  <section class="section2">
+    <h1>Previous Responses</h1>
+    <div class="underline"></div>
+    <div class="cards">
+      <div class="card">
+        <h2>Rajesh</h2>
+        <h3>rajesh.sharma@example.com</h3>
+        <p>Exceptional dining! Flavors exquisite, presentation stunning.</p>
+        <span class="ratings">★★★★★</span>
+      </div>
+
+      <div class="card">
+        <h2>Priya</h2>
+        <h3>priya@gmail.com</h3>
+        <p>Nice ambiance, good service. Food tasty, overall good.</p>
+        <span class="ratings">★★★★☆</span>
+      </div>
+
+      <div class="card">
+        <h2>Amit</h2>
+        <h3>amit@gmail.com</h3>
+        <p>Great value. Portions big, taste fantastic. Recommend!</p>
+        <span class="ratings">★★★★☆</span>
+      </div>
+
+      <div class="card">
+        <h2>Neha</h2>
+        <h3>neha@gmail.com</h3>
+        <p>Menu variety impressive. Enjoyed vegetarian options.</p>
+        <span class="ratings">★★★★★</span>
+      </div>
+
+      <div class="card">
+        <h2>Vikram</h2>
+        <h3>vikram@gmail.com</h3>
+        <p>Desserts amazing! Will return for more treats soon.</p>
+        <span class="ratings">★★★★★</span>
+      </div>
+
+      <div class="card">
+        <h2>Anita</h2>
+        <h3>anita@gmail.com</h3>
+        <p>Nice staff, cozy place. Food good, needs seasoning.</p>
+        <span class="ratings">★★★☆☆</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
